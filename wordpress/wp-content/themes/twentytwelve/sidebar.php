@@ -26,7 +26,7 @@
 						while(have_posts()):the_post();
 						?>
 						<li>
-						<a href="/?p=<?php the_id();?>"><?php the_title();?></a>
+						<a href="/wp/wordpress/?p=<?php the_id();?>"><?php the_title();?></a>
 						</li>
 						<?php
 						endwhile;
