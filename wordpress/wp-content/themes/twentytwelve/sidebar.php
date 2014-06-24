@@ -33,6 +33,20 @@
 						?>
 				</ul>
 		</aside>
+
+<aside id="recent-posts-2" class="widget widget_recent_entries">
+<h3 class="widget-title">热门分类</h3>
+<?php  
+$args=array(  
+  'orderby' => 'name',  
+  'order' => 'ASC'  
+  );  
+$categories=get_categories($args);  
+  foreach($categories as $category) {  
+    echo '<li><a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" ' . '>' . $category->name.'</a></li>';  
+}  
+?>  
+</aside>
 								</div>
 
 <!--
