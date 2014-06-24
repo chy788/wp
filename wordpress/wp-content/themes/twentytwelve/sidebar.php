@@ -47,6 +47,11 @@ $categories=get_categories($args);
 }  
 ?>  
 </aside>
+
+<aside id="recent-posts-2" class="widget widget_recent_entries">
+<h3 class="widget-title">网站介绍</h3>
+<li><a href="http://112.126.72.168/wp/wordpress/?page_id=30'">老鹅要说</a></li>
+</aside>
 								</div>
 
 <!--
