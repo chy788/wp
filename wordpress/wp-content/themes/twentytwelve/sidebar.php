@@ -21,7 +21,7 @@
 			</form>
 
 
-						<aside id="recent-posts-2" class="widget widget_recent_entries">		<h3 class="widget-title">近期文章</h3>		<ul>
+						<aside id="recent-posts-2" class="widget widget_recent_entries">		<h3 class="widget-title">近期活动</h3>		<ul>
 						<?php  query_posts('limit 0,10 order by id');
 						while(have_posts()):the_post();
 						?>
