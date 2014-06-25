@@ -28,36 +28,13 @@ mysql_query("insert into wp_hits value('".$_SERVER['REMOTE_ADDR']."','".time()."
 
 	<div id="primary" class="site-content">
 		<div id="content" role="main">
-		<?php  
-$args=array(  
-  'orderby' => 'name',  
-  'order' => 'ASC'  
-  );  
-$categories=get_categories($args);  
-  foreach($categories as $category) {
-	  //var_dump($category);
-    echo '<h1><a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" ' . '>' . $category->name.'</a></h1>';  
-	?>
-	<hr width='100%' size='3' color='#00ffff'> 
-			<?php query_posts('cat='.$category->term_id);
-						while(have_posts()):the_post();  ?>
-			<h3 class="entry-title"><a href="/?p=<?php the_id();?>"><?php the_title();?></a></h3>
-			</br>
-			
-				<?php //get_template_part( 'content', get_post_format() ); ?>
-			<?php endwhile; ?>
-			<hr width='100%' size='3' color='#00ffff'>
-	<?php
-}  
-?>  
-<!--
 		<?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php get_template_part( 'content', get_post_format() ); ?>
 			<?php endwhile; ?>
--->
+
 			<?php twentytwelve_content_nav( 'nav-below' ); ?>
 
 		<?php else : ?>
