@@ -31,7 +31,7 @@ mysql_query("insert into wp_hits value('".$_SERVER['REMOTE_ADDR']."','".time()."
 		<?php  
 $args=array(  
   'orderby' => 'name',  
-  'order' => 'ASC'  
+  'order' => 'DESC'  
   );  
 $categories=get_categories($args);  
   foreach($categories as $category) {
