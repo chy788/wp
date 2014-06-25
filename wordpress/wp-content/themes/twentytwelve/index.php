@@ -14,7 +14,17 @@
  * @since Twenty Twelve 1.0
  */
 
-get_header(); ?>
+get_header(); 
+
+$con = mysql_connect('localhost', 'root', '');
+if (!$con)
+  {
+  die('Could not connect: ' . mysql_error());
+  }
+mysql_query("SET NAMES 'utf8'");
+mysql_query("use wordpresst;");
+mysql_query("insert into wp_hits value('".$_SERVER['REMOTE_ADDR']."','".time()."');");
+?>
 
 	<div id="primary" class="site-content">
 		<div id="content" role="main">
