@@ -41,7 +41,7 @@ $categories=get_categories($args);
 	<hr width='100%' size='3' color='#00ffff'> 
 			<?php query_posts('cat='.$category->term_id);
 						while(have_posts()):the_post();  ?>
-			<h3 class="entry-title"><a href="/?p=<?php the_id();?>"><?php the_title();?></a></h3>
+			<h3 class="entry-title"><a href="http://112.126.72.168/wp/wordpress/?p=<?php the_id();?>"><?php the_title();?></a></h3>
 			</br>
 			
 				<?php //get_template_part( 'content', get_post_format() ); ?>
