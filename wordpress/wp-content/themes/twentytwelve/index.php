@@ -46,7 +46,7 @@ $categories=get_categories($args);
 			if(get_the_id() == 27)
 		{
 			?>
-			<img src='/hot.gif' >
+			<img src='http://112.126.72.168/wp/wordpress/hot.gif' >
 			<?php
 		}
 			?>
