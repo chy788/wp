@@ -28,22 +28,13 @@ get_header(); ?>
 			<?php
 			/* Start the Loop */
 			while ( have_posts() ) : the_post();
-			echo '<div class="entry-content">';
+
 				/* Include the post format-specific template for the content. If you want to
 				 * this in a child theme then include a file called called content-___.php
 				 * (where ___ is the post format) and that will be used instead.
 				 */
-				//get_template_part( 'content', get_post_format() );
-				?>
-				<h3 class="entry-title"><a href="http://wp.com/?p=<?php the_id();?>" rel="bookmark"><?php the_title();?></a></h3>
-				<?php
-				$content = get_the_content();
-				echo blog_summary(str_replace("\n","",$content), 150);
-				?>
-				<a href="http://wp.com/?p=<?php the_id();?>" rel="bookmark" style="text-decoration:none;">...</a>
-				<?php
-				echo '<br>';
-				echo '</div>';
+				get_template_part( 'content', get_post_format() );
+
 			endwhile;
 
 			twentytwelve_content_nav( 'nav-below' );
