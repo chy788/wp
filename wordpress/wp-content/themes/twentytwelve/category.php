@@ -40,6 +40,7 @@ get_header(); ?>
 				$content = get_the_content();
 				$content = str_replace("\n","",$content);
 				$content=preg_replace('/<img[^>]+>/i','',$content);
+				$content=preg_replace('/<br[^>]+>/i','',$content);
 				echo blog_summary(str_replace("\n","",$content), 150);
 				?>
 				<a href="http://wp.com/?p=<?php the_id();?>" rel="bookmark" style="text-decoration:none;">...</a>
