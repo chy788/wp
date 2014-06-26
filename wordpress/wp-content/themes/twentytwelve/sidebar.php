@@ -23,12 +23,18 @@
 
 						<aside id="recent-posts-2" class="widget widget_recent_entries">		<h3 class="widget-title">近期活动</h3>		<!--<ul>-->
 						<?php  query_posts('limit 0,10 order by id');
+						$flag = 0;
 						while(have_posts()):the_post();
 						?>
 						<li>
 						<a href="/wp/wordpress/?p=<?php the_id();?>"><?php the_title();?></a>
 						</li>
 						<?php
+						if($flag==4)
+						{
+							break;
+						}
+						$flag++;
 						endwhile;
 						?>
 				<!--</ul>-->
