@@ -38,6 +38,8 @@ get_header(); ?>
 				<h3 class="entry-title"><a href="http://wp.com/?p=<?php the_id();?>" rel="bookmark"><?php the_title();?></a></h3>
 				<?php
 				$content = get_the_content();
+				$content = str_replace("\n","",$content);
+				$content=preg_replace('/<img[^>]+>/i','',$content);
 				echo blog_summary(str_replace("\n","",$content), 150);
 				?>
 				<a href="http://wp.com/?p=<?php the_id();?>" rel="bookmark" style="text-decoration:none;">...</a>
