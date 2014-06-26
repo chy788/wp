@@ -51,7 +51,7 @@
 		<?php
 $args=array(  
   'orderby' => 'name',  
-  'order' => 'ASC'  
+  'order' => 'DESC'  
   );  
 $categories=get_categories($args);
 ?>
