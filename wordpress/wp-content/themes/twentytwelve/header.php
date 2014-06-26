@@ -48,6 +48,26 @@
 		<?php if ( get_header_image() ) : ?>
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php header_image(); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" /></a>
 		<?php endif; ?>
+		<?php
+$args=array(  
+  'orderby' => 'name',  
+  'order' => 'ASC'  
+  );  
+$categories=get_categories($args);
+?>
+<nav class='cat-list' style="margin:10px 0px 0px 0px;">
+			<div><ul>
+<?php
+foreach($categories as $category) {
+	  //var_dump($category);
+	  echo '<li class="current_page_item" style="display:inline; margin: 0px 20px 10px 0px;"><a href="' . get_category_link( $category->term_id ) . '" style="text-decoration:none;">' . $category->name.'</a></li>';
+}
+
+?>
+</ul>
+<hr size='3' color='#00ffff'>
+</div>
+		</nav>
 	</header><!-- #masthead -->
 
 	<div id="main" class="wrapper">
