@@ -58,9 +58,17 @@ $categories=get_categories($args);
 <nav class='cat-list' style="margin:10px 0px 0px 0px;">
 			<div><ul>
 <?php
+$length = count($categories);
+$i = 0;
 foreach($categories as $category) {
 	  //var_dump($category);
 	  echo '<li class="current_page_item" style="display:inline; margin: 0px 20px 10px 0px;"><a href="' . get_category_link( $category->term_id ) . '" style="text-decoration:none;">' . $category->name.'</a></li>';
+	  if($i == $length-1)
+		{
+		  break;
+		}
+	  echo '<li class="current_page_item" style="display:inline; margin: 0px 20px 10px 0px;"><a>|</a></li>';
+	  $i++;
 }
 
 ?>
