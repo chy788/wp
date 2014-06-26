@@ -28,9 +28,6 @@ get_header(); ?>
 			<?php
 			/* Start the Loop */
 			while ( have_posts() ) : the_post();
-			?>
-			<hr width='100%' size='3' color='#00ffff'>
-			<?php
 			echo '<div class="entry-content">';
 				/* Include the post format-specific template for the content. If you want to
 				 * this in a child theme then include a file called called content-___.php
