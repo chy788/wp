@@ -43,7 +43,7 @@ $categories=get_categories($args);
 						while(have_posts()):the_post();  ?>
 			<h3 class="entry-title"><a href="http://112.126.72.168/wp/wordpress/?p=<?php the_id();?>"><?php the_title();?></a>
 			<?php
-			if(get_the_id() == 27 || get_the_id() == 55)
+			if(get_the_id() == 27 || get_the_id() == 55 || get_the_id() == 64)
 		{
 			?>
 			<img src='http://112.126.72.168/wp/wordpress/hot.gif' >
