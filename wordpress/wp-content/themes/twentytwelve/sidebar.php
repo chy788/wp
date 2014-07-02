@@ -12,7 +12,7 @@
 
 <div id="secondary" class="widget-area" role="complementary">
 
-<form role="search" method="get" id="searchform" class="searchform" action="http://112.126.72.168/wp/wordpress/">
+<form role="search" method="get" id="searchform" class="searchform" action="http://shoucaihuo.com/wp/wordpress/">
 				<div>
 					<label class="screen-reader-text" for="s">搜索：</label>
 					<input type="text" value="" name="s" id="s">
