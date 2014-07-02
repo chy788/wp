@@ -41,12 +41,12 @@ $categories=get_categories($args);
 	<hr width='100%' size='3' color='#00ffff'> 
 			<?php query_posts('cat='.$category->term_id);
 						while(have_posts()):the_post();  ?>
-			<h3 class="entry-title"><a href="http://112.126.72.168/wp/wordpress/?p=<?php the_id();?>"><?php the_title();?></a>
+			<h3 class="entry-title"><a href="http://shoucaihuo.com/wp/wordpress/?p=<?php the_id();?>"><?php the_title();?></a>
 			<?php
 			if(get_the_id() == 27 || get_the_id() == 55 || get_the_id() == 64)
 		{
 			?>
-			<img src='http://112.126.72.168/wp/wordpress/hot.gif' >
+			<img src='http://shoucaihuo.com/wp/wordpress/hot.gif' >
 			<?php
 		}
 			?>

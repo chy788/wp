@@ -14,6 +14,9 @@
 		<div class="site-info">
 			<?php do_action( 'twentytwelve_credits' ); ?>
 			<!--<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'twentytwelve' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'twentytwelve' ); ?>"><?php printf( __( 'Proudly powered by %s', 'twentytwelve' ), 'WordPress' ); ?></a>-->
+			<center>
+			<a herf='http://www.miitbeian.gov.cn/'>京ICP备14029757号</a>
+			</center>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
