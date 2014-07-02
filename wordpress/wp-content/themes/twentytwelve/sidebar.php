@@ -12,7 +12,7 @@
 
 <div id="secondary" class="widget-area" role="complementary">
 
-<form role="search" method="get" id="searchform" class="searchform" action="http://shoucaihuo.com/wp/wordpress/">
+<form role="search" method="get" id="searchform" class="searchform" action="http://www.shoucaihuo.com/wp/wordpress/">
 				<div>
 					<label class="screen-reader-text" for="s">搜索：</label>
 					<input type="text" value="" name="s" id="s">
@@ -48,16 +48,15 @@ $args=array(
   'order' => 'ASC'  
   );  
 $categories=get_categories($args);  
-//get_category_link( $category->term_id )
   foreach($categories as $category) {  
-    echo '<li><a href="http://shoucaihuo.com/wp/wordpress/?cat=' .$category->term_id. '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" ' . '>' . $category->name.'</a></li>';  
+    echo '<li><a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" ' . '>' . $category->name.'</a></li>';  
 }  
 ?>  
 </aside>
 
 <aside id="recent-posts-2" class="widget widget_recent_entries">
 <h3 class="widget-title">网站介绍</h3>
-<li><a href="http://shoucaihuo.com/wp/wordpress/?page_id=30'">老鹅要说</a></li>
+<li><a href="http://www.shoucaihuo.com/wp/wordpress/?page_id=30'">老鹅要说</a></li>
 </aside>
 								</div>
 

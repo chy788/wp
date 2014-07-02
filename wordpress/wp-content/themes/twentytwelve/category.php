@@ -35,7 +35,7 @@ get_header(); ?>
 				 */
 				//get_template_part( 'content', get_post_format() );
 				?>
-				<h3 class="entry-title"><a href="http://shoucaihuo.com/wp/wordpress/?p=<?php the_id();?>" rel="bookmark"><?php the_title();?></a></h3>
+				<h3 class="entry-title"><a href="http://www.shoucaihuo.com/wp/wordpress/?p=<?php the_id();?>" rel="bookmark"><?php the_title();?></a></h3>
 				<?php
 				$content = get_the_content();
 				$content = str_replace("\n","",$content);
@@ -43,7 +43,7 @@ get_header(); ?>
 				$content=preg_replace('/<br[^>]+>/i','',$content);
 				echo blog_summary(str_replace("\n","",$content), 150);
 				?>
-				<a href="http://shoucaihuo.com/wp/wordpress/?p=<?php the_id();?>" rel="bookmark" style="text-decoration:none;">...</a>
+				<a href="http://www.shoucaihuo.com/wp/wordpress/?p=<?php the_id();?>" rel="bookmark" style="text-decoration:none;">...</a>
 				<?php
 				echo '<br>';
 				echo '</div>';
