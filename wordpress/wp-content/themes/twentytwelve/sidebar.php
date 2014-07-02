@@ -48,8 +48,9 @@ $args=array(
   'order' => 'ASC'  
   );  
 $categories=get_categories($args);  
+//get_category_link( $category->term_id )
   foreach($categories as $category) {  
-    echo '<li><a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" ' . '>' . $category->name.'</a></li>';  
+    echo '<li><a href="http://shoucaihuo.com/wp/wordpress/?cat=' .$category->term_id. '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" ' . '>' . $category->name.'</a></li>';  
 }  
 ?>  
 </aside>
