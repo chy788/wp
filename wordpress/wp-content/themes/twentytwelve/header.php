@@ -62,7 +62,7 @@ $length = count($categories);
 $i = 0;
 foreach($categories as $category) {
 	  //var_dump($category);
-	  echo '<li class="current_page_item" style="display:inline; margin: 0px 20px 10px 0px;"><a href="' . get_category_link( $category->term_id ) . '" style="text-decoration:none;">' . $category->name.'</a></li>';
+	  echo '<li class="current_page_item" style="display:inline; margin: 0px 20px 10px 0px;"><a href="' . get_category_link( $category->term_id ) . '" style="text-decoration:none;color: #636363;font-weight: bold;">' . $category->name.'</a></li>';
 	  if($i == $length-1)
 		{
 		  break;
