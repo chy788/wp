@@ -24,7 +24,7 @@
 <?php wp_footer(); ?>
 <script type="text/javascript">
 var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fb5305e1362f85708644cd8864cd1d3df' type='text/javascript'%3E%3C/script%3E"));
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F8c4b98418350c0b74d3f790f8b22134a' type='text/javascript'%3E%3C/script%3E"));
 </script>
 </body>
 </html>
