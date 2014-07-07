@@ -1470,8 +1470,8 @@ img#wpstats {
 	}
 	.site {
 		margin: 0 auto;
-		max-width: 960px;
-		max-width: 68.571428571rem;
+		/*max-width: 960px;*/
+		/*max-width: 68.571428571rem;*/
 		overflow: hidden;
 	}
 	.site-content {
