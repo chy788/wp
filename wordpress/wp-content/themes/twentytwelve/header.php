@@ -35,10 +35,8 @@
 <div id="page" class="hfeed site">
 	<header id="masthead" class="site-header" role="banner">
 		<hgroup>
-		<center>
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 class="site-description"><?php /*bloginfo( 'description' );*/ echo '收集有才艺的小伙伴！'; ?></h2>
-			</center>
+			<h1 class="site-title"><center><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></center></h1>
+			<h2 class="site-description"><center><?php /*bloginfo( 'description' );*/ echo '收集有才艺的小伙伴！'; ?></center></h2>
 		</hgroup>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
