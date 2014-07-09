@@ -32,13 +32,11 @@
 </head>
 
 <style type="text/css">
-<!--
 body {
  background-image: url(/1402642038408.jpg);
  background-attachment: fixed;
  background-size:cover; 
 }
--->
 </style>
 
 <body <?php body_class(); ?>>
