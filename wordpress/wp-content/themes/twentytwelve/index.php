@@ -48,7 +48,7 @@ $categories=get_categories($args);
 			?>
 			<img src='http://www.shoucaihuo.com/wp/wordpress/hot.gif' >
 			<?php
-		} else if(get_the_id() == 67)
+		} else if(get_the_id() == 81 || get_the_id() == 79)
 		{
 			?>
 			<img src='http://www.shoucaihuo.com/wp/wordpress/new.gif' >
