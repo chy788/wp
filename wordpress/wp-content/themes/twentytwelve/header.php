@@ -33,7 +33,7 @@
 
 <style type="text/css">
 body {
- background-image: url(/1402642038408.jpg);
+ background-image: url(http://www.shoucaihuo.com/wp/wordpress/1402642038408.jpg);
  background-attachment: fixed;
  background-size:cover; 
 }
