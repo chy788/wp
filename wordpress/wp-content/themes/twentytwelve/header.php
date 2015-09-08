@@ -19,6 +19,7 @@
 <html <?php language_attributes(); ?>>
 <!--<![endif]-->
 <head>
+<meta name="baidu-site-verification" content="VDyeADeZ5h" />
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
 <title><?php //wp_title( '|', false, 'right' ); ?>收才伙--专注海选选秀比赛信息！</title>
